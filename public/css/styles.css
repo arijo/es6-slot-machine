@@ -1,0 +1,116 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Verdana;
+  color: rgba(235,235,235,.9);
+  background-color: rgba(0,0,0,.8);
+}
+
+#game {
+  width: 100%;
+  margin: 1.5em auto;
+}
+
+#game header {
+  height: 30%;
+  text-align: center;
+}
+
+#game .content {
+  height: 50%;
+  text-align: center;
+}
+
+#game footer {
+  height: 20%;
+}
+
+#game header h1 {
+  font-size: 2rem;
+  text-shadow: 0 .05em .05em #335166;
+}
+
+#game header h1.bonus {
+  width: 15em;
+  margin: .2em auto;
+  padding: .3em .8em;
+  font-size: 1.5rem;
+  color: #ccc;
+  background: rgba(0,0,0,.5);
+  border: 1px solid #446d88;
+  border-radius: .2em;
+  text-shadow: 0 .05em .05em #335166;
+}
+
+#game .content h1 {
+  font-size: 1.8rem;
+  text-shadow: 0 .05em .05em #335166;
+}
+
+#game .content ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#game .content li {
+  flex: auto;
+  max-width: 32%;
+  margin: .2em;
+  border: 1px solid #446d88;
+  background: rgba(0,0,0,.5);
+  box-shadow: 0 .05em .25em gray;
+}
+
+#game footer {
+  text-align: center;
+}
+
+#game footer button {
+  padding: .3em .8em;
+  border: 1px solid #446d88;
+  background: #58a linear-gradient(#77a0bb, #58a);
+  border-radius: .2em;
+  box-shadow: 0 .05em .25em gray;
+  color: white;
+  text-shadow: 0 .05em .05em #335166;
+  font-size: 1.25em;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+
+@media all and (max-width: 480px) {
+
+#game {
+  width: 100%;
+  max-width: 100%;
+}
+
+#game header,
+#game .content,
+#game footer {
+  height: auto;
+}
+
+#game header h1.bonus {
+  width: auto;
+}
+
+#game .content ul {
+  display: block;
+}
+
+#game .content li {
+  max-width: 100%;
+}
+
+#game footer button {
+  width: 100%;
+  margin-top: .3em;
+}
+
+}
